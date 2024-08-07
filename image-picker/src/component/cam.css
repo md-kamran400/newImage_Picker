@@ -1,0 +1,34 @@
+.webcam-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webcam {
+    width: 100%; /* Default width */
+    max-width: 600px; /* Maximum width */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .webcam {
+        width: 90%; /* Reduced width on small screens */
+    }
+}
